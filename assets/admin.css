@@ -1,0 +1,118 @@
+/**
+ * Admin CSS
+ * @package WordPress
+ * @subpackage Dropbox To Post
+ * @author Shazzad Hossain Khan
+ * @url https://w4dev.com
+**/
+
+
+.dbtp_wrap pre{
+	overflow:auto;
+}
+.dbtp_wrap pre.small{
+	font-size:12px;
+	line-height: normal;
+}
+textarea.dbtp_small_text{
+	font-size:12px !important;
+	line-height: normal !important;
+}
+/* Error/Message/Note */
+.dbtp_wrap div._note,
+.dbtp_wrap div._error,
+.dbtp_wrap div._updated,
+.dbtp_wrap div._ok {
+    padding: 1px 12px;
+    margin: 5px 0 15px;
+    background-color: #fff;
+	border-left:4px solid #d1e5ee;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+.dbtp_wrap div._note p,
+.dbtp_wrap div._error p,
+.dbtp_wrap div._updated p,
+.dbtp_wrap div._ok p{
+	margin:.5em 0;
+}
+.dbtp_wrap div._error {
+    border-color: #dd3d36;
+}
+.dbtp_wrap div._updated,
+.dbtp_wrap div._ok {
+    border-color: #7ad03a;
+}
+.notes div._error,
+.notes div._updated,
+.notes div._ok{
+	margin:0;
+}
+.notes div._note + div._note{
+	margin-top:5px;
+}
+#dbtp_admin_notes._ld{
+	padding-left:30px;
+	background-position:5px center;
+	background-repeat:no-repeat;
+	background-image:url(images/spinner.gif);
+}
+
+/* Form */
+.wf{
+	color:#333;
+	margin-bottom:20px;
+}
+.wf p{
+	font-style:normal;
+	font-size:inherit;
+}
+.wfft_textarea{
+	height:auto;
+}
+.dbtp__ov{
+	overflow:visible;
+}
+
+/* Box */
+.dbtp-box{
+	margin-bottom:20px;
+	border:2px solid #ddd;
+	background-color:#fff;
+}
+.dbtp-box-title {
+    font-size: 1.4rem;
+    line-height: normal;
+    padding: .75rem 1.75rem;
+    padding-top: 20px;
+}
+.dbtp-box-content{
+	padding:.75rem 1.75rem 1.75rem 1.75rem;
+}
+
+
+.dbtp-admin-content{
+	overflow:hidden;
+}
+@media(min-width:768px){
+	.dbtp-admin-sidebar{
+		float:right;
+		width:300px;
+		margin-left:20px;
+	}
+}
+
+.wf_repetable td,
+.wf_repetable th{
+	text-align: left;
+	padding: 5px;
+}
+.wf_repeater_remove{
+	text-decoration: none;
+}
+.wf_repetable .wf_col_action{
+	width: 60px;
+	text-align: center;
+}
+.wf_repetable input{
+	margin: 0 !important;
+}
